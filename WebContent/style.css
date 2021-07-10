@@ -1,0 +1,796 @@
+.header
+{
+  padding-top:0px;
+padding-left: 0px;
+width: 1920px;
+height: 930px;
+background: transparent radial-gradient(closest-side at 50% 50%, #58687E 0%, #39495E 100%) 0% 0% no-repeat padding-box;
+opacity: 1;
+flex-wrap: wrap;
+
+}
+.Highradius{
+    padding-top: 22px;
+margin-left: 523px;
+width: 235px;
+height: 50px;
+background: transparent  0% 0% no-repeat padding-box;
+opacity: 1;
+align-items: center;
+align-self: center;
+
+
+}
+.logo{
+    padding-top: 16px;
+    padding-left: 30px;
+    width:289px;
+    height: 52px;
+    background: transparent  0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.invoice{
+ top: 100px;
+margin-left: 30px;
+width: 141px;
+height: 31px;
+    text-align:left;
+    font: normal normal normal 28px/32px Ubuntu;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    
+}
+.content{
+  top: 16px;
+ left: 20px;
+width: 1860px;
+height: 739px;
+ margin-left: 20px;
+ margin-bottom: 31px;
+background: #273D49CC 0% 0% no-repeat padding-box;
+border-radius: 10px;
+opacity: 1;
+}
+ .add{
+  top: 190px;
+margin-left: 1126px;
+width: 99px;
+height: 45px;
+border: 1px solid #14AFF1;
+border-radius: 10px;
+opacity: 1;
+background: transparent;
+text-align: center;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+ }
+ 
+ .edit
+ {
+   top: 179px;
+left: 1247px;
+width: 102px;
+height: 45px;
+border: 1px solid #97A1A9;
+border-radius: 10px;
+opacity: 1;
+background: #97A1A9 0% 0% no-repeat padding-box;
+opacity: 1;
+text-align: center;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0px;
+color: #97A1A9;
+opacity: 1;
+background: transparent;
+ }
+ .delete{
+    top: 190px;
+left: 1367px;
+width: 123px;
+height: 45px;
+border: 1px solid #97A1A9;
+border-radius: 10px;
+opacity: 1;
+text-align: center;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0px;
+color: #97A1A9;
+opacity: 1;
+background: transparent;
+ }
+ .srch{
+    top: 10px;
+left: 1510px;
+width: 340px;
+height: 45px;
+background: #283A46 0% 0% no-repeat padding-box;
+border: 1px solid #356680;
+border-radius: 10px;
+opacity: 1;
+ }
+ ::placeholder
+{top: 202px;
+left: 1535px;
+width: 210px;
+height: 20px;
+text-align: left;
+font: normal normal normal 18px/21px Ubuntu;
+letter-spacing: 0px;
+color: #97A1A9;
+opacity: 1;
+padding: 20px;
+ 
+ }
+ .srchimg{
+   top: 185px;
+left: 1810px;
+width: 32px;
+height: 32px;
+ position: absolute;
+ }
+ td{
+     padding: 5px;
+   
+ }
+ .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  top: 211px;
+left: 407px;
+width: 1106px;
+height: 509px;
+background: #2A3E4C 0% 0% no-repeat padding-box;
+box-shadow: 0px 8px 24px #00000029;
+border-radius: 6px;
+opacity: 1;
+}*/
+
+ 
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ 
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Modal Header */
+.modal-header {
+    top: 211px;
+left: 407px;
+width: 1090px;
+height: 91px;
+background: #2A3E4C 0% 0% no-repeat padding-box;
+border-radius: 10px 10px 0px 0px;
+opacity: 1;
+ 
+text-align: left;
+font: normal normal normal 28px/32px Ubuntu;
+letter-spacing: 0px;
+color: #FFFFFF;
+text-transform: capitalize;
+opacity: 1;
+}
+/* Modal Body */
+.modal-body 
+{
+    background: #2A3E4C 0% 0% no-repeat padding-box;
+}
+
+/* Modal Footer */
+.modal-footer 
+{
+top: 641px;
+left: 458px;
+width: 1000px;
+height: 67px;
+background: #2A3E4C 0% 0% no-repeat padding-box;
+color: white;
+}
+
+/* Modal Content */
+.modal-content {
+  position: absolute;
+  background: #2A3E4C 0% 0% no-repeat padding-box;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  height: 509px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+.cusname{
+    top: 332px;
+margin-left: 23px;
+width: 300px;
+height: 45px;
+background: #283A46 0% 0% no-repeat padding-box;
+border: 1px solid #356680;
+border-radius: 10px;
+opacity: 1;
+text-align: left;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0.19px;
+color: #FFFFFF;
+opacity: 1;
+}
+.cancel
+{
+top: 662px;
+left: 51px;
+width: 60px;
+height: 23px;
+text-align: left;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0px;
+color: #14AFF1;
+opacity: 1;
+}
+.rest{
+top: 662px;
+left: 904px;
+width: 87px;
+height: 45px;
+text-align: center;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+border: 1px solid #14AFF1;
+border-radius: 10px;
+background: transparent;
+opacity: 1;
+}
+.submite{
+top: 662px;
+left: 1000px;
+width: 77px;
+height: 45px;
+background: #97A1A9 0% 0% no-repeat padding-box;
+border-radius: 10px;
+opacity: 1;
+}
+.invoiceno{
+top: 478px;
+margin-left: 20px;
+width: 300px;
+height: 45px;
+background: #283A46 0% 0% no-repeat padding-box;
+border: 1px solid #356680;
+border-radius: 10px;
+opacity: 1;
+text-align: center;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0.19px;
+color: #FFFFFF;
+opacity: 1;
+}
+.cusno{
+    top: 405px;
+margin-left: 25px;
+width: 300px;
+height: 45px;
+background: #283A46 0% 0% no-repeat padding-box;
+border: 1px solid #356680;
+border-radius: 10px;
+opacity: 1;
+text-align: center;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0.19px;
+color: #FFFFFF;
+opacity: 1;
+}
+.cusdate{
+top: 332px;
+margin-left: 25px;
+width: 300px;
+height: 45px;
+background: #283A46 0% 0% no-repeat padding-box;
+border: 1px solid #356680;
+border-radius: 10px;
+opacity: 1;
+text-align: center;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0.19px;
+color: #FFFFFF;
+opacity: 1;
+}
+label{
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0.19px;
+opacity: 1;
+color: #97A1A9;
+}
+div#datepicker input.form-control {
+background-color: blue !important;
+color: black !important;
+
+}
+.invoiceamt{
+top: 551px;
+left: 620px;
+width: 300px;
+height: 45px;
+background: #283A46 0% 0% no-repeat padding-box;
+border: 1px solid #356680;
+border-radius: 10px;
+opacity: 1;
+}
+.notes{
+top: 405px;
+left: 1183px;
+width: 300px;
+height: 191px;
+background: #283A46 0% 0% no-repeat padding-box;
+border: 1px solid #356680;
+border-radius: 10px;
+opacity: 1;
+
+}
+h2{
+    top: 241px;
+left: 437px;
+width: 147px;
+height: 31px;
+text-align: left;
+font: normal normal normal 28px/32px Ubuntu;
+letter-spacing: 0px;
+color: #FFFFFF;
+text-transform: capitalize;
+opacity: 1;
+}
+ .modal-bg{
+position: fixed;
+top: 210px;
+margin-left: 689px;
+width: 543px;
+height: 443px;
+background: #2A3E4C 0% 0% no-repeat padding-box;
+box-shadow: 0px 8px 24px #00000029;
+border-radius: 6px;
+justify-content: center;
+align-items: center;
+visibility: hidden;
+opacity: 0;
+transition: visibility 0s, opacity 0.5s;
+ }
+ .bg-active{
+   visibility: visible;
+   opacity: 1;
+ }
+ .del-bg{
+position: fixed;
+top: 294px;
+margin-left: 654px;
+width: 611px;
+height: 342px;
+background: #2A3E4C 0% 0% no-repeat padding-box;
+box-shadow: 0px 8px 24px #00000029;
+border-radius: 6px;
+justify-content: center;
+align-items: center;
+visibility:hidden;
+opacity: 0;
+transition: visibility 0s, opacity 0.5s;
+ }
+ .del-active{
+   visibility: visible;
+   opacity: 1;
+ }
+ .deled{
+position: relative;
+background: #2A3E4C 0% 0% no-repeat padding-box;
+box-shadow: 0px 8px 24px #00000029;
+border-radius: 6px;
+width: 100%;
+height: 100%;
+align-items: center;
+}
+.del-close{
+position: absolute;
+top: 15px;
+right: 10px;
+width: 24px;
+height: 24px;
+background: transparent  0% 0% no-repeat padding-box;
+opacity: 1;
+cursor: pointer;
+}
+.modaled{
+position: relative;
+background: #2A3E4C 0% 0% no-repeat padding-box;
+box-shadow: 0px 8px 24px #00000029;
+border-radius: 6px;
+width: 100%;
+height: 100%;
+align-items: center;
+}
+.modal-close{
+position: absolute;
+top: 20px;
+right: 10px;
+width: 24px;
+height: 24px;
+background: transparent  0% 0% no-repeat padding-box;
+opacity: 1;
+cursor: pointer;
+}
+
+.edhead{
+ margin-top: 30px;
+margin-left: 20px;
+width: 543px;
+height: 91px;
+background: #2A3E4C 0% 0% no-repeat padding-box;
+border-radius: 10px 10px 0px 0px;
+opacity: 1;
+top: 240px;
+left: 719px;
+width: 146px;
+height: 31px;
+text-align: left;
+font: normal normal normal 28px/32px Ubuntu;
+letter-spacing: 0px;
+color: #FFFFFF;
+text-transform: capitalize;
+opacity: 1;
+}
+.inamt{
+  top: 331px;
+left: 883px;
+width: 319px;
+height: 45px;
+background: #283A46 0% 0% no-repeat padding-box;
+border: 1px solid #356680;
+border-radius: 10px;
+opacity: 1;
+text-align: left;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0.19px;
+color: #FFFFFF;
+opacity: 1;
+}
+.notes{
+  top: 404px;
+margin-left: 83px;
+width: 319px;
+height: 191px;
+background: #283A46 0% 0% no-repeat padding-box;
+border: 1px solid #356680;
+border-radius: 10px;
+opacity: 1;
+text-align: left;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0.19px;
+color: #FFFFFF;
+opacity: 1;
+}
+.edfoo{
+  top: 642px;
+left: 740px;
+width: 483px;
+height: 67px;
+
+}
+.canceled{
+ top: 663px;
+margin-left: 20px;
+width: 60px;
+height: 23px;
+text-align: left;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0px;
+color: #14AFF1;
+opacity: 1;
+background: transparent;
+}
+.rst{
+  top: 620px;
+margin-left: 250px;
+width: 92px;
+height: 45px;
+border: 1px solid #14AFF1;
+border-radius: 10px;
+opacity: 1;
+text-align: center;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+background: transparent;
+}
+.save{
+  top: 652px;
+left: 1120px;
+width: 82px;
+height: 45px;
+background: #14AFF1 0% 0% no-repeat padding-box;
+border-radius: 10px;
+opacity: 1;
+text-align: center;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+}
+.mai{
+  top: 0px;
+margin-left: 15px;
+width: 531px;
+height: 23px;
+text-align: left;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0px;
+color: #C0C6CA;
+}
+.del{
+  top: 3px;
+left: 470px;
+width: 101px;
+height: 45px;
+background: #14AFF1 0% 0% no-repeat padding-box;
+border-radius: 10px;
+opacity: 1;
+text-align: center;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+}
+.delclose{
+  top: 3px;
+margin-left: 355px;
+width: 100px;
+height: 45px;
+background: #2C404E 0% 0% no-repeat padding-box;
+border: 1px solid #14AFF1;
+border-radius: 10px;
+opacity: 1;
+text-align: center;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+}
+.dlhead{
+  top: 350px;
+margin-left: 25px;
+width: 217px;
+height: 31px;
+text-align: left;
+font: normal normal normal 28px/32px Ubuntu;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+}
+.checkbox{
+  top: 28px;
+margin-left: -50px;
+width: 16px;
+height: 16px;
+opacity: 1;
+align-items: center;
+cursor: pointer;
+}
+.customername{
+  top: 26px;
+padding-left: 100px;
+width: 131px;
+height: 20px;
+text-align: center;
+font: normal normal normal 18px/21px Ubuntu;
+letter-spacing: 0px;
+color: #97A1A9;
+opacity: 1;
+}
+.customername1{
+  top: 26px;
+padding-left: 100px;
+width: 131px;
+height: 20px;
+text-align: center;
+font: normal normal normal 18px/21px Ubuntu;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+}
+.Customer{
+  top: 266px;
+margin-left: -1000px;
+width: 95px;
+height: 20px;
+text-align: left;
+font: normal normal normal 18px/21px Ubuntu;
+letter-spacing: 0px;
+color: #97A1A9;
+opacity: 1;
+}
+.Invoic{
+  top: 266px;
+margin-left: -950px;
+width: 73px;
+height: 20px;
+text-align: left;
+font: normal normal normal 18px/21px Ubuntu;
+letter-spacing: 0px;
+color: #97A1A9;
+opacity: 1;
+}
+.Invoice-amt{
+  top: 266px;
+margin-left: -1100px;
+width: 127px;
+height: 20px;
+text-align: left;
+font: normal normal normal 18px/21px Ubuntu;
+letter-spacing: 0px;
+color: #97A1A9;
+opacity: 1;
+}
+.Due-date{
+  top: 266px;
+margin-left: -850px;
+width: 76px;
+height: 20px;
+text-align: left;
+font: normal normal normal 18px/21px Ubuntu;
+letter-spacing: 0px;
+color: #97A1A9;
+opacity: 1;
+}
+.predicted-date{
+  top: 266px;
+margin-left:-650px;
+width: 198px;
+height: 20px;
+text-align: right;
+font: normal normal normal 18px/21px Ubuntu;
+letter-spacing: 0px;
+color: #97A1A9;
+text-transform: capitalize;
+opacity: 1;
+}
+.Notes{
+  top: 266px;
+margin-left:-350px;
+width: 49px;
+height: 20px;
+text-align: center;
+font: normal normal normal 18px/21px Ubuntu;
+letter-spacing: 0px;
+color: #97A1A9;
+text-transform: capitalize;
+opacity: 1;
+
+}
+input[type=”date”]::-webkit-calendar-picker-indicator {
+color: transparent;
+color: #FFFFFF;
+background: #283A46 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 10px #00000029;z-index: 1;
+}
+a:link {
+            text-decoration:none;
+            
+        }
+        a:hover {
+            text-decoration: none;
+     
+
+        }
+        #customers {
+             padding-top: 50px;
+            text-align: center;
+font: normal normal normal 18px Ubuntu;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+width: 100%;
+border-collapse: collapse;
+}
+
+#customers td, #customers th {
+  
+  padding: 13px;
+}
+
+#customers tr:nth-child(even){background-color: #283A46;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  
+  color:#97A1A9;
+}
+.req{
+  text-align: left;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0.19px;
+color: #FF5B5B;
+}
+input::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1
+}
+
+input::-webkit-calendar-picker-indicator:hover {
+  background: transparent;
+  cursor: pointer;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-clear-button {
+  display: none;
+}
+.checkbox1 {
+    display: inline-flex;
+    cursor: pointer;
+    position: relative;
+}
+.checkbox1 > span {
+    color: #FFFFFF;
+    margin-left: 80px;
+}
+
+.checkbox1 > input:checked {
+    background-image: url("images/check_box-black-18dp.svg");
+}
+
+.checkbox1 > input:checked + span::before {
+  	background-image: url("images/check_box-black-18dp.svg");
+    position: absolute;
+}
+.checkbox > input:active {
+    border: 2px solid #34495E;
+}
+.checkbox1 > input {
+  top: 268px;
+margin-left: -50px;
+    height: 25px;
+    width: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    outline: none;
+    transition-duration: 0.3s;
+    background-image: url("images/check_box_outline_blank-black-18dp.svg");
+    cursor: pointer;
+  }
+  tr{cursor: pointer; transition: all .25s ease-in-out}
+            .selected{background: #2A5368 0% 0% no-repeat padding-box; font-weight: bold; color: #fff;}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Highradius</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="index.js"></script>
+</head>
+
+<body onload="getData()">
+	<div class="header" >
+              <img src="images/Group 20399.svg" class="logo"> <img class="Highradius" src="images/logo.svg">
+              <p class="invoice">Invoice List</p>
+              <div class="content"> 
+                  <table>
+                      <tr >
+                 <td><button class="add" id="myBtn">+ADD</button></td>
+                 <td><button class="edit" id="edit-Btn" ><img src="images/Path 18191.svg" > Edit</button></td>
+                 <td> <button class="delete" id="del-Btn">-Delete</button></td>
+                  <td style="flex-wrap: wrap;"><input type="search" class="srch" placeholder="Search by Invoice Number"><img class="srchimg" src="images/search-24px (3).svg"><td>
+                      </tr>                      
+                </table>
+                    <hr color="#283A46"></hr>
+                    
+                      <table id="customers">
+                        <tr >
+                         
+                          <th> <label class="checkbox1"><input type="checkbox" class="checkbox"  onchange="checkAll(this)"/><p class="customername">Customer Name</p></label></th>
+                          <th><p class="CustomEr">Customer#</p></th>
+                          <th><p class="Invoi">Invoice#</p></th>
+                          <th><p class="Invoic-amt">Invoice Amount</p></th>
+                          <th><p class="Due-dat">Due-date</p></th>
+                          <th><p class="predicted-dat">predicted payment date</p></th>
+                          <th><p class="Nots" >Notes</p></th>
+                          </tr>
+                       
+                      </table>
+                  </div>              
+              </div>
+        </div>
+        <div class="modal-bg">
+          <div class="modaled">
+            <h2 class="edhead">Edit Invoice</h2>
+            <img src="images/baseline-close-24px.svg" class="modal-close">
+            <hr color="#283A46"></hr>
+            <table>
+              <tr>
+           <td> <label for="Invoice" >Invoice Amount</label>
+            <input type="number" class="inamt"></td></tr>
+            <tr>
+           <td> <label for ="notes" >Notes</label>
+            <textarea  class="notes"></textarea></td>
+            </tr>
+          </table>
+            <hr color="#283A46"></hr>
+            <div class="edfoo">          
+            <table>
+              <tr>
+                <td> <a class="canceled" href="high.html">Cancel</a></td>
+                <td><button type="reset" class="rst">Reset</button></td>
+                <td><button type="submit" class="save">Save</button></td>
+              </tr>
+            </table>
+            </div>
+          </div>
+        </div>
+        <div class="del-bg">
+          <div class="deled">
+            <h2 class="dlhead">Delete record(s)?</h2>
+            <img src="images/baseline-close-24px.svg" class="del-close">
+            <hr color="#283A46"></hr>
+            <div class="mai">
+            <p>You'll lose your records after this action .we can't recover</p>
+            <p>them once you delete</p><br>
+            <p>Are you sure you want to <span style="color: red;"> permanently delete </span>them?</p>
+            <hr color="#283A46"></hr>
+            <form onsubmit="del()">
+            
+           
+            <table>
+              <tr>
+           <td> <button type="submit" class="delclose" onclick="window.location.href='high.html';" >Cancel</button></td>
+         <td><input type="submit" class="del" value="Delete"></td>
+        </tr>
+        </table>
+         </form>
+          </div>            
+          </div>
+        </div>
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Add Invoice</h2>
+              <hr color="#283A46"></hr>
+            </div>         
+            <div class="modal-body">
+                <table >
+                    <form method="POST" action="Add">
+            <table>
+                <tr>
+        <td class="tdadd">Customer Name   <span class="star"> *</span></td>
+                    <td><input type="text" required class="addinput" name="customerName"></td>
+                    <td  class="tdadd"> Due Date <span class="star"> *</span></td>
+        <td><input type="date" required class="addinput" name="dueDate"></td>
+        </tr>
+                <tr><td class="tdadd">Customer Number <span class="star"> *</span></td>
+        <td><input type="text" required class="addinput" name="customerNumber"></td>
+                    <td class="tdadd">Notes</td><td ><textarea rows="" class="addinput" name="notes"></textarea></td>
+        </tr>
+                <tr>
+        <td class="tdadd">Invoice No.  <span class="star"> *</span></td>
+        <td><input type="text" required class="addinput" name="invoiceNo"></td>
+        </tr>
+                <tr>
+        <td  class="tdadd">Invoice Amount  <span class="star"> *</span></td>
+        <td><input type="text" required class="addinput" name="invoiceAmt"></td>
+        </tr>
+            </table>
+        <hr class="hr">
+        <div class="addbtn">
+            <div class="body">
+             
+                <span class="btns">
+                    <input type="reset" value="Clear" class="clr">
+                    
+                    <input type="submit" value="Add" class="addbtns">
+                </span>
+            </div>
+            
+        </div>
+    </form>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <hr color="#283A46"></hr>
+               <a class="cancel" href="high.html">Cancel</a>
+               <table>
+                   <tr>
+                    <th style="margin-top:662px ;padding-left: 904px;"><button type="reset" class="rest">Clear</button> </th>
+                    <th> <button type="submit" class="submite">Add</button></th>           
+                   </tr>
+               </table>              
+            </div>
+          </div>
+        </div>
+       <script>
+var modal = document.getElementById("myModal");
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+var modalBtn=document.getElementById("edit-Btn");
+var modalBg=document.querySelector('.modal-bg');
+var modalClose=document.querySelector('.modal-close')
+var delBtn=document.getElementById("del-Btn");
+var delBg=document.querySelector('.del-bg');
+var delClose=document.querySelector('.del-close');
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+  delBtn.disabled=true;
+  modalBtn.disabled=true;
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+  delBtn.disabled=false;
+  modalBtn.disabled=false;
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+modalBtn.addEventListener('click',function(){
+  modalBg.classList.add('bg-active');
+  btn.disabled=true;
+  delBtn.disabled=true;
+});
+modalClose.addEventListener('click',function(){
+  modalBg.classList.remove('bg-active');
+  btn.disabled=false;
+  delBtn.disabled=false;
+});
+delBtn.addEventListener('click',function(){
+  delBg.classList.add('del-active');
+  btn.disabled=true;
+  modalBtn.disabled=true;
+});
+delClose.addEventListener('click',function(){
+  delBg.classList.remove('del-active');
+  btn.disabled=false;
+  modalBtn.disabled=false;
+});
+var checkboxes = document.querySelectorAll("input[type = 'checkbox']");
+function checkAll(myCheckbox){
+    if(myCheckbox.checked == true){
+     
+        checkboxes.forEach(function(checkbox){
+            checkbox.checked = true; 
+           // document.querySelector("checkbox").style.backgroundColor= '#2A5368' ;
+
+        });
+    }
+    else{
+        checkboxes.forEach(function(checkbox){
+            checkbox.checked = false;
+           
+
+        });
+    }
+}
+function selectedRow(){
+  var index,
+    table = document.getElementById("customers");
+for(var i = 1; i < table.rows.length; i++)
+{   
+    table.rows[i].onclick = function()
+    {
+         // remove the background from the previous selected row      
+      console.log(typeof index);
+        // get the selected row index
+        index = this.rowIndex;
+        if(index%2!=0){
+         document.querySelector("#customers tr:nth-child(even)").style.backgroundColor= '#2A5368' ;
+        }
+        // add class selected to the row
+        
+       this.classList.toggle("selected");     
+        //console.log(typeof index); 
+        
+     };
+}
+}      
+</script>
+</body>
+</html>
